@@ -1,8 +1,9 @@
-import google from './assets/google.png'
-import apple from './assets/apple.png'
-import djuke from './assets/djuke.png'
+import google from '../assets/google.png'
+import apple from '../assets/apple.png'
+import djuke from '../assets/djuke.png'
+import { Link } from "react-router-dom";
 
-function App() {
+function Home() {
   return (
     <div style={{
       backgroundColor: "#FF61CD",
@@ -39,22 +40,18 @@ function App() {
           display: "flex",
           flexDirection: "row",
         }}>
-          <a style={{
+          <Link style={{
             textDecoration: "none",
             color: "#FFFFFF",
-          }} href='http://www.djuke.dk'>Legal</a>
+          }} to='/legal'>Legal</Link>
           <div style={{
             marginLeft: "16px",
             marginRight: "16px"
           }} />
-          <a style={{
-            textDecoration: "none",
-            color: "#FFFFFF",
-          }} href='http://www.djuke.dk'>Help</a>
         </div>
       </footer>
     </div>
   );
 }
 
-export default App;
+export default Home;
