@@ -1,6 +1,6 @@
 {
-  "homepage": "http://djuke-is.github.io",
   "name": "djuke-is",
+  "homepage": "http://djuke-is.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
